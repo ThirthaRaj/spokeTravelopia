@@ -8,7 +8,8 @@
     "start": "node -r dotenv/config app.js",
     "lint": "eslint . --ext .js --ignore-pattern node_modules",
     "lint:watch": "esw config --color --watch",
-    "start:pm2": "pm2 start pm2.sh -i max"
+    "start:pm2": "pm2 start pm2.sh -i max",
+    "test": "mocha --reporter spec"
   },
   "husky": {
     "hooks": {
@@ -17,16 +18,19 @@
   },
   "dependencies": {
     "celebrate": "^15.0.0",
+    "chai": "^4.3.4",
     "chalk": "^4.1.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "^0.31.2",
+    "mocha": "^9.1.0",
     "morgan": "~1.9.1",
     "path": "^0.12.7",
     "pg": "^8.7.1",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "supertest": "^6.1.6"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.0",

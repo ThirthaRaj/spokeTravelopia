@@ -4,3 +4,5 @@ Install node modules: npm install
 Run Server: npm start
 docker build :  sudo docker build - < Dockerfile
 docker run: docker run imageId
+
+testing - npm run test
